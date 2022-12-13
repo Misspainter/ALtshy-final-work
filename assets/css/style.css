@@ -398,6 +398,25 @@ margin-right: 653px;
     margin-right: 46px;
 }
 
+.windows {
+    display: none;
+    width: 407px;
+    height: 318px;
+    background-color: #EEEFF1;
+    padding: 20px;
+}
+
+#shadow { 
+    position: fixed;
+    width:100%;
+    height:100%;
+    z-index:1; /* поверх всех  кроме окна*/ 
+    background:#000;
+    opacity: 0.5; /*прозрачность*/ 
+    left:0;
+    top:0;
+}
+
 @media screen and (max-width:980px) {
 
 header {
@@ -445,10 +464,6 @@ header {
     align-items: center;
     padding-top: 50px;
 }
-
-/* .picture-first {
-    display: none;
-} */
 
 .text-first  {
     padding: 0%;
