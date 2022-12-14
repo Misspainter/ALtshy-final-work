@@ -224,6 +224,10 @@ margin-top:  30px;
     padding: 100px 175px 50px 177px;
 }
 
+.news a {
+    text-decoration: none;
+}
+
 .news h2 {
     font-style: normal;
 font-weight: 400;
@@ -400,10 +404,18 @@ margin-right: 653px;
 
 .windows {
     display: none;
-    width: 407px;
-    height: 318px;
+    /* width: 407px;
+    height: 318px; */
     background-color: #EEEFF1;
     padding: 20px;
+    position: fixed;
+    z-index: 2;
+    /* left: 50%; */
+    top: 20%;
+    left: 40%;
+    right: 0%;
+    width: 407px;
+height: 247px;
 }
 
 #shadow { 
@@ -415,6 +427,49 @@ margin-right: 653px;
     opacity: 0.5; /*прозрачность*/ 
     left:0;
     top:0;
+}
+
+.container-1 {
+    text-align: center;
+    color: #44495D;
+}
+
+.container-1 p {
+    padding: 0%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container-2 {
+display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-text {
+    width: 50vmin;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.button_up {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.container-3 {
+    display: flex;
+    justify-content: center;
+}
+
+.button_up {
+    background-color: #8098B0;
+    border-radius: 30px;
+    color: #FFFFFF;
+}
+
+.button_up:hover {
+    background: #5a6b7c;
 }
 
 @media screen and (max-width:980px) {
@@ -538,15 +593,17 @@ header {
 }
 
 .news-one img, .news-two img, .news-three img {
-    height: 200px;
+    height: 400px;
 }
 
 .news-one h5, .news-two h5, .news-three h5 {
     height: 73px;
+    font-size: 20px;
 }
 
 .news-one p, .news-two p, .news-three p {
     height: 150px;
+    font-size: 14px;
 }
 
 #write {
@@ -599,6 +656,12 @@ footer {
 
 .contacts a {
     margin-right: 10px;
+}
+
+.windows{
+    width: 360px;
+    left: auto;
+    right: auto;
 }
 
 }
